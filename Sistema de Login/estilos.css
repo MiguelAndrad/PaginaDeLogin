@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 10px;
+   /*border: solid green 1px ;*/
+}
+.campos{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: 7px;
+    /*border: solid red 1px;*/
+}
+.botoes{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    padding-left: 15px;
+    gap: 10px;
+    /*border: solid red 1px;*/
+}

@@ -22,24 +22,25 @@ btLogin.addEventListener("click", function () {
     }
 
     if (!senha.match(/[/a-z]/g)) {
-        erros.push("possuir letras minúsculas (no mínimo, 1)")
+        erros.push("possuir letras minúsculas (no mínimo 1)")
     }
 
     if (!senha.match(/[A-Z]/g) || senha.match(/[A-Z]/g).length < 2) {
-        erros.push("possuir letras maiúsculas (no mínimo, 2)")
+        erros.push("possuir letras maiúsculas (no mínimo 2)")
     }
 
     if (!senha.match(/[\W|_]/g)) {
-        erros.push("possuir símbolos (no mínimo, 1)")
+        erros.push("possuir símbolos (no mínimo 1)")
     }
 
     if (erros.length == 0) {
         resp.innerText = "Tudo certo! Senha válida."
+        location.href = "tempo.html" //location.href manda pra outra pagina
     }
-
+    
     else {
         resp.innerText = `A senha deve ${erros.join(", ")}`
     }
-
+    
 
 })
