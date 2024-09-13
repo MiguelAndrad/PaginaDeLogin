@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+   <h1>Selecione a ferramenta que você deseja usar</h1>
+   <input type="button" value="Calculadora de IMC" id="btIMC">
+   <input type="button" value="Calculadora de regra de 3" id="btRegra3">
+
+   <script>
+    btIMC.addEventListener("click", ()=>{
+         location.href = "calcIMC.html"
+    })
+    btRegra3.addEventListener("click",()=>{
+         location.href = "calcR3.html"
+    })
+   </script>
+</body>
+
+</html>

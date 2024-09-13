@@ -33,7 +33,7 @@ btLogin.addEventListener("click", function () {
     }
 
     if (erros.length == 0) {
-        location.href = "tempo.html" //location.href manda pra outra pagina
+        location.href = "logado.html" //location.href manda pra outra pagina
     }
     
     else {
