@@ -57,8 +57,11 @@ btCriar.addEventListener("click", () => {
     if (!senha.match(/[\W|_]/g)) {
         erros.push("possuir símbolos (no mínimo 1)")
     }
+    if (senha !== repSenha) {
+        erros.push("coincidir com a senha repetida")
+    }
 
-    if (erros.length == 0) {
+    if (erros.length == 0 ) {
         localStorage.setItem("senha",senha)
         alert("Senha criada com sucesso!")
         location.href = "index.html"
