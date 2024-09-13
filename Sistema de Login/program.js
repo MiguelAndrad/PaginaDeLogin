@@ -1,14 +1,13 @@
-let inNome = document.getElementById("inNome")
+let inEmail = document.getElementById("inEmail")
 let inSenha = document.getElementById("inSenha")
 let btLogin = document.getElementById("btLogin")
 let btCriarConta = document.getElementById("btCriarConta")
-let resp = document.querySelector("h2")
 
 btLogin.addEventListener("click", function () {
-    let nome = inNome.value
+    let email = inEmail.value
     let senha = inSenha.value
     let erros = []
-    if (nome == "" || senha == "") {
+    if (email == "" || senha == "") {
         alert("Preencha os campos corretamente.")
         return
     }
@@ -34,12 +33,11 @@ btLogin.addEventListener("click", function () {
     }
 
     if (erros.length == 0) {
-        resp.innerText = "Tudo certo! Senha válida."
         location.href = "tempo.html" //location.href manda pra outra pagina
     }
     
     else {
-        resp.innerText = `A senha deve ${erros.join(", ")}`
+        alert( `A senha deve ${erros.join(", ")}`)
     }
     
 

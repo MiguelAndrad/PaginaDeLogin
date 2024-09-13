@@ -9,31 +9,20 @@
 </head>
 
 <body>
-    <div class="container">
 
-        <div class="campos">
-            <div>
-                <label for="inNome">Nome de usuário:</label>
-                <input type="text" id="inNome">
-            </div>
-            <div>
-                <label for="inSenha">Senha do usuário:</label>
-                <input type="password" id="inSenha">
+    <div class="pagina">
+        <div class="card">
+            <div class="conteudo">
+                <h2>Login</h2>
+                <p>Digite seus dados para acessar.</p>
+                <input class="campo" type="email" placeholder="Digite o seu e-mail" id="inEmail">
+                <input class="campo" type="password" placeholder="Digite sua senha" id="inSenha">
+                <a href="EsqueciMinhaSenha.html">Esqueci minha senha</a>
+                <input class="botao" type="button" value="Acessar" id="btLogin">
+                <p>Ainda não tem uma conta? <a href="CriarConta.html">Crie uma agora</a>.</p>
             </div>
         </div>
-
-        <div class="botoes">
-            <div>
-                <input type="button" value="login" id="btLogin">
-            </div>
-            <div>
-                <input type="button" value="Criar conta" id="btCriarConta">
-            </div>
-        </div>
-
     </div>
-    <h2></h2>
-
     <script src="program.js"></script>
 </body>
 

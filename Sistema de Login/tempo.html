@@ -8,16 +8,17 @@
 </head>
 
 <body>
-    <h1></h1>
+    <h1>Parabéns pelo login.</h1>
+    <h3></h3>
     <script>
-        let resp = document.querySelector("h1")
+        let resp = document.querySelector("h3")
         let dia = new Date()
         let horas = dia.getHours()
         if (horas < 12) resp.innerText = "Bom dia!"
 
         else if (horas < 18) resp.innerText = "Boa tarde!"
         
-        else esp.innerText = "Boa noite!"
+        else resp.innerText = "Boa noite!"
     </script>
 </body>
 
