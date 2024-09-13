@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Esqueci minha senha</title>
+    <link rel="stylesheet" href="estilosEsqueciMinhaSenah.css">
 </head>
+
 <body>
-    <h1>Esqueci Minha Senha</h1>
+    <div class="pagina">
+        <div class="card">
+            <form>
+                <h2>Esqueci minha senha</h2>
+                <p>Digite os dados para criar uma nova senha</p>
+                <input class="campo" type="email" placeholder="Digite seu e-mail" id="inEmail">
+                <input class="oculta" class="campo" type="password" placeholder="Crie uma senha" id="inSenha">
+                <input class="oculta" class="campo" type="password" placeholder="Repita sua senha" id="inRepSenha">
+                <input class="botao" type="button" id="btConfirmar" value="Confirme seu e-mail">
+                <input class="oculta" class="botao" type="button" id="btCriar" value="Criar senha">
+            </form>
+        </div>
+    </div>
+    <script src="programEsqueciMinhaSenha.js"></script>
 </body>
+
 </html>

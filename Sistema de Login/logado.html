@@ -2,24 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="estilosLogado.css">
 </head>
 
 <body>
-   <h1>Selecione a ferramenta que você deseja usar</h1>
-   <input type="button" value="Calculadora de IMC" id="btIMC">
-   <input type="button" value="Calculadora de regra de 3" id="btRegra3">
+     <div class="pagina">
+          <div class="card">
+               <from>
+                    <h1></h1>
+                    <h3></h3>
+                    <input class="botao" type="button" value="Editar informações" id="btEditar">
+                    <input class="botao" type="button" value=" Apagar meus dados" id="btApagar">
+               </from>
+          </div>
+     </div>
+     <script>
+          let resp = document.querySelector("h1")
+          let infos = document.querySelector("h3")
+          let btEditar = document.getElementById("btEditar")
+          let btApagar = document.getElementById("btApagar")
+          resp.innerText = `Olá, ${localStorage.getItem("user")}!`
+          infos.innerText = `E-mail: ${localStorage.getItem("email")} \n Senha: ${localStorage.getItem("senha")}`
 
-   <script>
-    btIMC.addEventListener("click", ()=>{
-         location.href = "calcIMC.html"
-    })
-    btRegra3.addEventListener("click",()=>{
-         location.href = "calcR3.html"
-    })
-   </script>
+          btApagar.addEventListener("click", ()=>{
+               localStorage.clear()
+               alert("Dados apagados com sucesso!")
+               location.href ="CriarConta.html"
+          })
+          btEditar.addEventListener("click", ()=>{
+               location.href ="editarDados.html"
+          })
+     </script>
+
 </body>
 
 </html>

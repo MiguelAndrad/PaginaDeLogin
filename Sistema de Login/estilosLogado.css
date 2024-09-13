@@ -1,0 +1,59 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.pagina {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #002930;
+    /*border: solid green 1px ;*/
+}
+
+.card {
+    width: 50%;
+    max-width: 450px;
+    background-color: #dfdfdf;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo {
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.campo:focus {
+    border-color: #ac4a00;
+}
+
+.botao {
+    padding: 15px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ac4a00;
+}
+
+.botao:hover {
+    transform: scale(1.04);
+    background-color: #e66401;
+}
+h3{
+    color: #444;
+}
